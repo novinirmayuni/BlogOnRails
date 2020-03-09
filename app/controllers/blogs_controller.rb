@@ -3,6 +3,7 @@ class BlogsController < ApplicationController
   
   def index
     @blogs = Blog.page(params[:page]).per(5)
+
     @categories = Category.all
 
       cate = params[:cate]

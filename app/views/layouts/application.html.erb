@@ -11,17 +11,23 @@
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">BlogWithCategories</a>
+  <a class="navbar-brand">Blog on Rails</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-md-auto">
       <li class="nav-item active">
-        <%= link_to "Create Blog", new_blog_path %>
+     
       </li>
     </ul> 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-md-auto">
+      <li>
+        <div>
+           <%= link_to "Create Blog", new_blog_path %>
+      </div>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-md-auto">
       <li class="nav-item active">
         <div>
@@ -31,9 +37,6 @@
     </ul> 
   </div>
     </nav>
-<p>
-    
-</p>
 
     <%= yield %>
   </body>
